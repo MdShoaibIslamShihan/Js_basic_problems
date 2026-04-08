@@ -141,5 +141,4 @@ let str = "100";
 let num = 50;
 console.log("addition of str and num:", str + num); // 10050
 
-let strToNum = 100;
-console.log("result:", strToNum + num);             // 150
+console.log("Result:", parseInt(str) + num);        // 150
