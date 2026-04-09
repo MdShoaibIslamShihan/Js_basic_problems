@@ -142,3 +142,96 @@ let num = 50;
 console.log("addition of str and num:", str + num); // 10050
 
 console.log("Result:", parseInt(str) + num);        // 150
+
+/*
+🧩 Problem 8: Boolean Logic
+let age = 17;
+
+👉 Task:
+
+If age ≥ 18 → "Adult"
+Otherwise → "Minor"
+*/
+
+let ageMine = 17;
+
+if (ageMine >= 18) {
+    console.log("Adult");
+} else {
+    console.log("minor");
+}
+
+/*
+🧩 Problem 9: Check Empty Value
+let value = "";
+
+👉 Task:
+
+Check if value is empty
+Print:
+"Empty string"
+or "Not empty"
+*/
+
+let value = "";
+
+if (value === "") {
+    console.log("Empty string");
+} else {
+    console.log("Not empty");
+}
+
+/*
+🧩 Problem 10: User Info
+let name = "Ali";
+let age = 22;
+let isStudent = true;
+
+👉 Task:
+Print:
+
+👉 "Ali is 22 years old and is a student"
+*/
+
+let nameMy = "Ali";
+let ageMy = 22;
+let isStudent = true;
+
+let status = isStudent ? "a student" : "not a student";
+console.log(`${name} is ${ageMy} years old and is ${status}`);
+
+/*
+🧩 Problem 11: Temperature Check
+let temp = 30;
+
+👉 Task:
+
+If temp > 25 → "Hot"
+Else → "Cool"
+*/
+
+let temp = 30;
+
+if (temp > 25) {
+    console.log("Hot");
+} else {
+    console.log("Cool");
+}
+
+/*
+🧩 Problem 12: Null Check
+let user = null;
+
+👉 Task:
+
+If user is null → "No user found"
+Else → "User exists"
+*/
+
+let user = null;
+
+if (user === null) {
+    console.log("No user found");
+} else {
+    console.log("User exists");
+} // typeof null === "object" // weird JavaScript behavior
