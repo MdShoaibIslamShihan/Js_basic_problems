@@ -70,3 +70,12 @@ Level 2
 Find the largest number among 4 variables
 Find the maximum value from an array
 */
+
+let maxNum = [5, 12, 8];
+console.log(Math.max(...maxNum));
+
+let xx = 39; let xc = 4; let xy = 52; let xz = 40;
+console.log(Math.max(xx, xc, xy, xz));
+
+let ary = [40, 42, 99, 6];
+console.log(Math.max(...ary));
