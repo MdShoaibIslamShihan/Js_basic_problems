@@ -85,3 +85,81 @@ let lastChar = city.at(-1);
 
 console.log(firstChar);
 console.log(lastChar);
+
+/*
+🧩 Problem 7: Full Name
+let firstName = "Md";
+let lastName = "Mamun";
+
+👉 Task:
+
+Combine using template literal
+Output:
+Md Mamun
+*/
+
+let firstName = "Md";
+let lastName = "Mamun";
+console.log(`${firstName} ${lastName}`);
+
+/*
+🧩 Problem 8: Greeting Message
+let name = "Ali";
+let age = 20;
+
+👉 Task:
+Using template literals, print:
+
+Hello Ali, you are 20 years old
+*/
+
+let nameAli = "Ali";
+let age = 20;
+console.log(`Hello ${nameAli}, you are ${age} years old`);
+
+/*
+🧩 Problem 9: Extract Username
+let email = "user@gmail.com";
+
+👉 Task:
+
+Extract only "user"
+*/
+
+let email = "user@gmail.com";
+console.log(email.split("@")[0]);
+
+/*
+🧩 Problem 11: Check String Length
+let password = "abc123";
+
+👉 Task:
+
+If length < 8 → "Weak password"
+Else → "Strong password"
+*/
+
+let password = "abc123";
+if (password.length < 8) {
+    console.log("Weak password");
+} else {
+    console.log("Strong password");
+}
+
+/*
+🧩 Problem 12: Reverse a String (Challenging 🔥)
+let text = "hello";
+
+👉 Task:
+Output:
+
+olleh
+*/
+
+let text3 = "hello";
+function reverseString(str) {
+  if (str === "") return "";
+  return reverseString(str.substr(1)) + str[0];
+}
+
+console.log(reverseString("hello")); // olleh [Very Important]
