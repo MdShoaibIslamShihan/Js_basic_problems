@@ -79,3 +79,31 @@ console.log(Math.max(xx, xc, xy, xz));
 
 let ary = [40, 42, 99, 6];
 console.log(Math.max(...ary));
+
+/*
+🔹 toFixed()
+Level 1
+Format 5.678 to 2 decimal places
+Level 2
+Format 12.34567 to 3 decimal places
+Convert a number result into 2 decimal places after division
+*/
+
+console.log((5.678).toFixed(2));
+console.log((12.34567).toFixed(3));
+
+let result = 25 / 3;
+console.log(result.toFixed(2));
+
+/*
+🔹 parseInt()
+Level 1
+Convert "50" into a number
+Level 2
+Convert "100px" into an integer
+Convert "75abc" into an integer
+*/
+
+console.log(parseInt("50"));
+console.log(parseInt("100px"));
+console.log(parseInt("75abc"));
