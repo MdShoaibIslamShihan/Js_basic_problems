@@ -75,7 +75,7 @@ let number = 30;
 number += 10;// 40
 number -= 20;// 20
 number *= 2;// 40
-console.log(nusuumber);// 40
+console.log(number);// 40
 
 let salary = 15000;
 salary = salary += 0.10;
@@ -84,3 +84,26 @@ console.log(salary);// 15000.1
 let value = 50;
 value -= 20;
 console.log(value);// 30
+
+/*
+Create a program where a value changes step-by-step using all assignment operators.
+Simulate a bank balance where deposit and withdrawal use += and -=.
+Write a program that updates a score based on different conditions using assignment operators.
+*/
+
+let x = 10;
+x += 5;
+x -= 3;
+x *= 2;
+x /= 4;
+console.log(x);// 6
+
+let bankBalance = 5000;
+bankBalance += 500; // deposit
+bankBalance -= 200; // withdrawal
+console.log(bankBalance); // 5300
+
+let score = 50;
+score += 10; // bonus
+score -= 5;  // penalty
+console.log(score); 
