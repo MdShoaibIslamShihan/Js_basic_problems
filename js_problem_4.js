@@ -107,3 +107,81 @@ let score = 50;
 score += 10; // bonus
 score -= 5;  // penalty
 console.log(score); 
+
+/*
+📌 3. Comparison Operators (==, ===, !=, !==, >, <, >=, <=)
+Compare two numbers and print which one is greater.
+Check if two values are equal using ==.
+Check if a number is greater than 10.
+*/
+
+let numb1 = 50; let numb2 = 30;
+console.log(numb1 > numb2);
+
+console.log(5 == "5");
+
+console.log(15 > 10);
+
+/*
+Check if a number is between 10 and 50.
+Compare two values using == and === and print the difference.
+Check if a person is eligible to vote (age ≥ 18).
+*/
+
+let w = 25;
+console.log(w >= 10 && w <= 50);
+
+console.log(40 == "40");    // true
+console.log(40 === "40");   // false
+
+let age = 55;
+if ( age >= 18) {
+    console.log("Eligible for vote");
+} else {
+    console.log("Not eligible");
+}
+
+/*
+Compare two variables with different data types and explain result of == vs ===.
+Build a grading system:
+Marks ≥ 80 → A
+≥ 60 → B
+≥ 40 → C
+< 40 → Fail
+Check if three numbers are equal or not using comparison operators.
+*/
+
+let marks = 75;
+if (marks >= 80) {
+  console.log("A");
+} else if (marks >= 60) {
+  console.log("B");
+} else if (marks >= 40) {
+  console.log("C");
+} else {
+  console.log("Fail");
+}
+
+let p = 6; let q = 6; let r = 6;
+console.log(p === q && q === r);
+
+/*
+Take a number and check:
+If it is even or odd
+If it is greater than 50
+Build a simple calculator using +, -, *, /
+Create a mini login check (compare username & password)
+*/
+
+let check = 36;
+console.log(check % 2 === 0 ? 'even' : 'odd');
+console.log(check > 50);
+
+let username = "admin";
+let password = "1234";
+
+if (username === "admin" && password === "1234") {
+  console.log("Login successful");
+} else {
+  console.log("Invalid login");
+}
