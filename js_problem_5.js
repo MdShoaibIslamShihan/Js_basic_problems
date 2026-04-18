@@ -113,3 +113,60 @@ console.log(getDiscount);
 let year = 2024;
 let isLeap = (year % 4 == 0) && (year % 100 !== 0);
 console.log(isLeap);
+
+/*
+Login Attempt Limit-
+A user is locked out if:
+Attempts are greater than 3 OR
+The account is already locked
+Given attempts and isLocked, determine lock status.
+*/
+
+let attempts = 4;
+let isLocked = false;
+let lockedStatus = (attempts > 3) || isLocked;
+console.log(lockedStatus);
+
+/*
+Complex Login System-
+A user can log in if:
+Username and password are correct
+AND
+(User is verified OR login via Google)
+AND
+Account is not banned
+Determine if login is allowed.
+*/
+
+let isUsernameCorrect = true;
+let isPasswordCorrect = true;
+let isVerified = false;
+let isGoogleLogin = true;
+let isBanned = false;
+
+let login = (isUsernameCorrect && isPasswordCorrect) && (isVerified || isGoogleLogin) && !isBanned;
+console.log(login);
+
+/*
+Advanced Form Submission-
+A form can be submitted if:
+All required fields are filled
+Email contains "@" AND "."
+Password is at least 8 characters AND includes a number
+User agreed to terms
+Validate the entire form.
+*/
+
+let allFieldsFilled = true;
+let email = "user@gmail.com";
+let password3 = "abc1234";
+let agreedTerms = true;
+
+let hasNumber = /\d/.test(password3);
+
+let canEnterForm = allFieldsFilled && 
+                    (email.includes("@") && email.includes(".")) &&
+                    (password3.length >= 8 && hasNumber) &&
+                    agreedTerms;
+
+console.log(canEnterForm);
