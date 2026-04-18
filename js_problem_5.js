@@ -170,3 +170,59 @@ let canEnterForm = allFieldsFilled &&
                     agreedTerms;
 
 console.log(canEnterForm);
+
+/*
+A person can enter a club if:
+Age is 21 or older
+AND
+(Has ID OR is a VIP)
+AND
+NOT on blacklist
+Determine entry eligibility.
+*/
+
+let age2 = 30;
+let hasID2 = true;
+let vip = false;
+let isBlacklist = false;
+
+let canEnter = age2 >= 21 && (hasID2 || vip) && !isBlacklist;
+console.log(canEnter);
+
+/*
+E-commerce Shipping Logic-
+Free shipping is available if:
+Order amount > 2000 AND user is a member
+OR
+Order amount > 5000
+AND
+Delivery location is valid
+Determine if free shipping applies.
+*/
+
+let amount = 3000;
+let isMember2 = true;
+let validLocation = true;
+
+let freeShipping = (amount > 2000 && isMember2) || (amount > 5000) && validLocation;
+console.log(freeShipping);
+
+/*
+Smart Notification System
+Send a notification if:
+User is online AND has unread messages
+OR
+User is offline BUT has urgent notifications
+AND
+Notifications are enabled
+Determine whether to send a notification.
+*/
+
+let userIsOnline = false;
+let unreadMessage = true;
+let urgentNotifications = true;
+let enableNoti = true;
+
+let sendNotification3 = (userIsOnline && unreadMessages) ||
+                       (urgentNotifications && enableNoti);
+console.log(sendNotification3);
