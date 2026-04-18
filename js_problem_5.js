@@ -91,3 +91,25 @@ let password2 = "123456";
 let termsAccepted = true;
 let validForm = (username !== "") && (password2.length >= 6) && (termsAccepted);
 console.log(validForm);
+
+/*
+Discount Eligibility-
+A user gets a discount if:
+They are a member AND their purchase is above 1000
+OR
+They have a special coupon
+Determine if the user gets a discount.
+
+Leap Year Check (Basic Logic)-
+Given a year, check if it is divisible by 4 AND not divisible by 100.
+*/
+
+let isMember = true;
+let purchase = 2000;
+let specialCoupon = true;
+let getDiscount = (isMember && purchase > 1000) || specialCoupon;
+console.log(getDiscount);
+
+let year = 2024;
+let isLeap = (year % 4 == 0) && (year % 100 !== 0);
+console.log(isLeap);
