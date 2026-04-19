@@ -140,3 +140,29 @@ if (amount >= 1000) {
     finalPrice = amount;
 }
 console.log(finalPrice);
+
+/*
+Check username and password:
+If both correct → "Login successful"
+If username wrong → "Invalid username"
+If password wrong → "Incorrect password"
+12. Triangle Type Checker
+*/
+
+let correctUsername = "Dosim";
+let correctPassword = "12345";
+
+let username = prompt("Enter Username");
+let password = prompt("Enter password");
+
+if (username !== correctUsername) {
+    console.log("Invalid username");
+} else if (password !== correctPassword) {
+    console.log("Invalid password");
+} else {
+    console.log("Login successful");
+}
+
+/*
+
+*/
