@@ -149,7 +149,7 @@ If password wrong → "Incorrect password"
 12. Triangle Type Checker
 */
 
-let correctUsername = "Dosim";
+/*let correctUsername = "Dosim";
 let correctPassword = "12345";
 
 let username = prompt("Enter Username");
@@ -161,8 +161,88 @@ if (username !== correctUsername) {
     console.log("Invalid password");
 } else {
     console.log("Login successful");
+} */
+
+/*
+Triangle Type Checker-
+Input 3 sides:
+All equal → "Equilateral"
+Two equal → "Isosceles"
+All different → "Scalene"
+13. Electricity Bill
+*/
+
+let a2 = 5; let b2 = 5; let c = 5;
+
+if (a2 === b2 && b2 === c) {
+    console.log("Equilateral");
+} else if (a2 === b2 || b2 === c || c === a2) {
+    console.log("Isosceles");
+} else {
+    console.log("Scalene");
 }
 
 /*
-
+Units consumed:
+First 100 → 5/unit
+Next 100 → 7/unit
+Above 200 → 10/unit
+Calculate total bill.
 */
+
+let units = 350;
+let bill = 0;
+
+if (units <= 100) {
+    bill = units * 5;
+} else if (units <= 200) {
+    bill = (units * 5) + (units - 100) * 7;
+} else {
+    bill = (units * 5) + (units * 7) + (units - 200) * 10;
+}
+
+console.log(bill);
+
+/*
+Check a number:
+Between 1–50 → "Low"
+51–100 → "Medium"
+Above 100 → "High"
+*/
+
+let numberCheck = 45;
+if (numberCheck < 1 && numberCheck > 50) {
+    console.log("Low");
+} else if (numberCheck <= 100) {
+    console.log("Medium");
+} else {
+    console.log("High");
+}
+
+/*
+Nested Condition (Strong Practice)
+
+Check a number:
+If positive:
+If even → "Positive Even"
+Else → "Positive Odd"
+Else:
+If negative → "Negative Number"
+Else → "Zero"
+*/
+
+let nnum = -4;
+
+if (nnum > 0) {
+    if (nnum % 2 === 0) {
+        console.log("Positive Even");
+    } else {
+        console.log("Positive Odd");
+    }
+} else  {
+    if (nnum < 0) {
+        console.log("Negative Number");
+    } else {
+        console.log("Zero");
+    }
+}
