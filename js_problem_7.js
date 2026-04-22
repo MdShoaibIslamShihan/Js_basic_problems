@@ -65,3 +65,38 @@ function introduce(name, age) {
     console.log(`Hi, I'm ${name} and I'm ${age} years old`);
 }
 introduce("Khamba", 43);
+
+// Write a function `multiply` with a default parameter so that calling `multiply(5)` returns 10.
+
+function multiply(a, b = 2) { // b = 2 dhora hoyese
+    return a * b;
+}
+console.log(multiply(3, 6));
+
+// Write a function `sum` that accepts any number of arguments using rest parameters and returns their total.
+
+function sum(...args) {
+    return args.reduce((a, b) => a + b, 0);
+}
+console.log(sum(3, 5));
+
+// Write a function that swaps the values of two variables using a destructuring trick inside the function.
+// Hint: Use array destructuring: [a, b] = [b, a].
+
+function swap( c, d) {
+    [c, d] = [d, c];
+    return [c, d];
+}
+console.log(swap(8, 4));
+
+// Build a function `pipe(...fns)` that takes multiple functions and returns a new function. The returned function passes its argument through each function in sequence.
+
+function pipe(...fns) {
+    return function (value) {
+        let result = value;
+
+        for (let i = 0; i < fns.length; i++);
+        result = fns[i](result);
+    }
+    return result;
+}
