@@ -100,3 +100,26 @@ function pipe(...fns) {
     }
     return result;
 }
+
+/*.....Return Values.... */
+
+// Write a function `double` that takes a number and returns twice its value. Store the result in a variable and print it.
+
+function double(n) {
+    return n * 2;
+}
+console.log(double(4));
+
+// Create a function `getFullName(firstName, lastName)` that returns the full name as a single string.
+
+function getFullName(fn, ln) {
+    return `${fn} ${ln}`;
+}
+console.log(getFullName("kabila", "Khan"));
+
+// Write a function `max` that accepts two numbers and returns the larger one.
+
+function max(a, b) {
+    return a > b ? a : b;
+}
+console.log(max(6, 13));
