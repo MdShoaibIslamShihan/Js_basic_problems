@@ -123,3 +123,71 @@ function max(a, b) {
     return a > b ? a : b;
 }
 console.log(max(6, 13));
+
+// ....... New Question........
+
+/*
+Function Expression – Check Even or Odd
+Create a function expression that takes a number and returns "Even" or "Odd" depending on the input.
+*/
+
+function check(num) {
+    if (num % 2 === 0) {
+        return "Even"
+    } else {
+        return "Odd"
+    }
+}
+console.log(check(6));
+
+/*
+Callback Basics – Custom Calculator
+Write a function that takes two numbers and a callback function.
+The callback will perform an operation (like add, subtract, multiply).
+Call your main function with different callbacks to perform different operations.
+*/
+
+function calculator(m, n, operation) {
+    return operation(m, n)
+}
+
+// callback function
+function add(m, n) {
+    return m + n;
+}
+function subtract(m, n) {
+    return m - n;
+}
+function multiply(m, n) {
+    return m * n;
+}
+
+console.log(calculator(5, 3, add));
+console.log(calculator(5, 3, subtract));
+
+/*
+Write a function that takes:
+
+an array of numbers
+a callback function
+
+The function should:
+
+apply the callback to each element
+return a new array with the modified values
+*/
+
+const processArray = (arr, callback) => {
+    let result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        result.push(callback(arr[i]));
+    }
+    return result;
+}
+// callback function
+let double2 = num => num * 2;
+let square2 = num => num * num;
+
+console.log(processArray([1, 2, 3], double2));
+console.log(processArray([1, 2, 3], square2));
