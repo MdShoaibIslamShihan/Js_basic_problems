@@ -1,0 +1,228 @@
+/*
+Login Status Check-
+You are given a boolean variable isLoggedIn.
+Write a condition to display a message:
+"Welcome back!" if the user is logged in
+"Please log in" otherwise
+*/
+
+let isLoggedIn = true;
+if (isLoggedIn) {
+    console.log("Welcome back!");
+} else {
+    console.log("Please log in");
+}
+
+/*
+Age Verification-
+Given a variable age, check if the user is eligible to vote (age must be 18 or older).
+Output true or false.
+*/
+
+let age = 32;
+if (age >= 18) {
+    console.log("eligible to vote");
+} else {
+    console.log("not eligible");
+}
+
+/*
+Password Match-
+Two variables password and confirmPassword are given.
+Check if both are the same and return true or false.
+*/
+
+const password = "Neu67t0n";
+const confirmPassword = "Neu67t0n";
+let isMatch = password === confirmPassword;
+console.log(isMatch);
+
+/*
+Simple AND Condition-
+Given two boolean variables hasID and isAdult, determine if a person is allowed entry (both must be true).
+*/
+
+const hasID = true;
+const isAdult = true;
+if (hasID && isAdult) {
+    console.log("can enter");
+} else {
+    console.log("can not enter");
+}
+
+/*
+NOT Operator Practice-
+Given a boolean variable isRaining, return true if it is NOT raining.
+*/
+
+let isRaining = false;
+let result = !isRaining;
+console.log(result);
+
+/*
+User Access Control-
+A user can access a page if:
+They are logged in AND
+They are either an admin OR a premium user
+Given isLoggedIn, isAdmin, isPremium, determine access.
+*/
+
+let isLoggedIn2 = true;
+let isAdmin = false;
+let isPremium = true;
+
+if (isLoggedIn2 && (isAdmin || isPremium)) {
+    console.log("Can Access");
+} else {
+    console.log("Can not Access");
+}
+
+/*
+Form Validation-
+A form is valid if:
+Username is not empty
+Password length is at least 6 characters
+Terms are accepted (true)
+Given variables, return whether the form is valid.
+*/
+
+let username = "Coco";
+let password2 = "123456";
+let termsAccepted = true;
+let validForm = (username !== "") && (password2.length >= 6) && (termsAccepted);
+console.log(validForm);
+
+/*
+Discount Eligibility-
+A user gets a discount if:
+They are a member AND their purchase is above 1000
+OR
+They have a special coupon
+Determine if the user gets a discount.
+
+Leap Year Check (Basic Logic)-
+Given a year, check if it is divisible by 4 AND not divisible by 100.
+*/
+
+let isMember = true;
+let purchase = 2000;
+let specialCoupon = true;
+let getDiscount = (isMember && purchase > 1000) || specialCoupon;
+console.log(getDiscount);
+
+let year = 2024;
+let isLeap = (year % 4 == 0) && (year % 100 !== 0);
+console.log(isLeap);
+
+/*
+Login Attempt Limit-
+A user is locked out if:
+Attempts are greater than 3 OR
+The account is already locked
+Given attempts and isLocked, determine lock status.
+*/
+
+let attempts = 4;
+let isLocked = false;
+let lockedStatus = (attempts > 3) || isLocked;
+console.log(lockedStatus);
+
+/*
+Complex Login System-
+A user can log in if:
+Username and password are correct
+AND
+(User is verified OR login via Google)
+AND
+Account is not banned
+Determine if login is allowed.
+*/
+
+let isUsernameCorrect = true;
+let isPasswordCorrect = true;
+let isVerified = false;
+let isGoogleLogin = true;
+let isBanned = false;
+
+let login = (isUsernameCorrect && isPasswordCorrect) && (isVerified || isGoogleLogin) && !isBanned;
+console.log(login);
+
+/*
+Advanced Form Submission-
+A form can be submitted if:
+All required fields are filled
+Email contains "@" AND "."
+Password is at least 8 characters AND includes a number
+User agreed to terms
+Validate the entire form.
+*/
+
+let allFieldsFilled = true;
+let email = "user@gmail.com";
+let password3 = "abc1234";
+let agreedTerms = true;
+
+let hasNumber = /\d/.test(password3);
+
+let canEnterForm = allFieldsFilled && 
+                    (email.includes("@") && email.includes(".")) &&
+                    (password3.length >= 8 && hasNumber) &&
+                    agreedTerms;
+
+console.log(canEnterForm);
+
+/*
+A person can enter a club if:
+Age is 21 or older
+AND
+(Has ID OR is a VIP)
+AND
+NOT on blacklist
+Determine entry eligibility.
+*/
+
+let age2 = 30;
+let hasID2 = true;
+let vip = false;
+let isBlacklist = false;
+
+let canEnter = age2 >= 21 && (hasID2 || vip) && !isBlacklist;
+console.log(canEnter);
+
+/*
+E-commerce Shipping Logic-
+Free shipping is available if:
+Order amount > 2000 AND user is a member
+OR
+Order amount > 5000
+AND
+Delivery location is valid
+Determine if free shipping applies.
+*/
+
+let amount = 3000;
+let isMember2 = true;
+let validLocation = true;
+
+let freeShipping = (amount > 2000 && isMember2) || (amount > 5000) && validLocation;
+console.log(freeShipping);
+
+/*
+Smart Notification System
+Send a notification if:
+User is online AND has unread messages
+OR
+User is offline BUT has urgent notifications
+AND
+Notifications are enabled
+Determine whether to send a notification.
+*/
+
+let userIsOnline = false;
+let unreadMessage = true;
+let urgentNotifications = true;
+let enableNoti = true;
+
+let sendNotification3 = (userIsOnline && unreadMessages) ||
+                       (urgentNotifications && enableNoti);
+console.log(sendNotification3);
