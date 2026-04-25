@@ -61,3 +61,25 @@ for (let numb of numm) {
     sum += numm;
 }
 console.log(sum);
+
+/*
+You have two arrays:
+fruits1 = ["Apple", "Banana"]
+fruits2 = ["Mango", "Orange"]
+Combine both arrays using concat()
+Extract only the middle 2 elements using slice()
+Convert the final array into a string separated by " - " using join()
+Print each step result
+*/
+
+fruits1 = ["Apple", "Banana"];
+fruits2 = ["Mango", "Orange"];
+
+let combined = fruits1.concat(fruits2);
+console.log("combined array:", combined); 
+
+let middle = combined.slice(1, 3);
+console.log("Middle elements:", middle);
+
+let resultString = middle.join("-");
+console.log("Joind String:", resultString);
