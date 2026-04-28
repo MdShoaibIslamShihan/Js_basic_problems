@@ -84,3 +84,42 @@ products.forEach(function(product){
 product.price += 10;
 });
 console.log(products);
+
+/*
+Create an object bankAccount with:
+
+owner
+balance
+
+Add methods:
+
+deposit(amount) → increases balance
+withdraw(amount) → decreases balance
+getBalance() → returns current balance using this
+
+Then:
+
+Perform multiple deposits and withdrawals
+Print final balance
+*/
+
+let bankAccount = {
+    owner: "Hilton",
+    balance: 1000,
+
+deposit: function(amount)  {
+    this.balance += amount;
+},
+withdraw: function(amount) {
+    this.balance -= amount;
+},
+getBalance: function(amount) {
+    return this.balance;
+} 
+};
+
+bankAccount.deposit(500);
+bankAccount.withdraw(300);
+bankAccount.deposit(400);
+
+console.log(bankAccount.getBalance());
