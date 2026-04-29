@@ -32,3 +32,21 @@ do {
     console.log(j);
     j++;
 } while (j <= 5);
+
+
+/*
+Array Looping (for & for...of)----------
+Given an array: [5, 10, 15, 20]
+Use a for loop to print each element
+Use a for...of loop to print each element multiplied by 2
+*/
+
+let arr = [5, 10, 15, 20];
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+for (let num of arr) {
+    console.log(num * 2);
+}
