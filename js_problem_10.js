@@ -50,3 +50,21 @@ for (let i = 0; i < arr.length; i++) {
 for (let num of arr) {
     console.log(num * 2);
 }
+
+/*
+break & continue (Control)---------
+Write a loop from 1 to 10:
+Skip number 5 using continue
+Stop the loop completely when the number is 8 using break
+Print the remaining numbers
+*/
+
+for (let i = 1; i <= 10; i++) {
+    if (i === 5) {
+        continue;
+    }
+    if (i ===  8) {
+        break;
+    }
+    console.log(i);
+}
