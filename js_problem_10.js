@@ -68,3 +68,25 @@ for (let i = 1; i <= 10; i++) {
     }
     console.log(i);
 }
+
+/*
+You have an array of numbers: [2, 4, 7, 9, 12, 15]
+Loop through the array using for...of
+Skip odd numbers using continue
+Stop the loop if a number is greater than 10 using break
+Print only the processed numbers
+*/
+
+let numbersArr = [2, 4, 7, 9, 12, 15];
+
+for (let num of numbersArr) {
+    if (num % 2 !== 0) {
+        continue;
+    }
+    if (num > 10) {
+        break;
+    }
+    console.log(num);
+}
+
+// 2, 4
