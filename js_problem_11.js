@@ -73,3 +73,26 @@ obt2 = obt1;
 obt2.year = 2378;
 console.log(obt1);
 console.log(obt2);
+
+/*
+Write a function that takes:
+
+a string
+a number
+an array
+
+Inside the function:
+
+print the string in uppercase
+add 10 to the number
+print all elements of the array
+*/
+
+myFunction("Love is absent", 100, ["Life", "Death", "Love", "Sex"]);
+function myFunction (str, num, arr) {
+    console.log(str.toUpperCase());
+    console.log(num + 10);
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
