@@ -46,3 +46,30 @@ let person = {
 }
 console.log(colors);
 console.log(person);
+
+/*
+Primitive vs Reference (Copy Behavior)
+Create a variable with a number value. Copy it to another variable and change the second variable.----
+Print both values-----
+Then:
+Create an object and copy it to another variable. Modify one property.
+Print both objects
+*/
+
+let a = 10;
+let b = a;
+
+b = 20;
+
+console.log(a); // 10
+console.log(b); // 20
+
+let obt1 = {
+    Month: "february",
+    year: 3099,
+};
+
+obt2 = obt1;
+obt2.year = 2378;
+console.log(obt1);
+console.log(obt2);
