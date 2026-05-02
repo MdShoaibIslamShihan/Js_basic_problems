@@ -96,3 +96,35 @@ function myFunction (str, num, arr) {
         console.log(arr[i]);
     }
 }
+
+/*
+Create an object user with:
+name (string)
+age (number)
+isActive (boolean)
+skills (array)
+
+Then:
+
+Add a new skill to the array
+Change isActive value
+Copy the object to another variable and modify name
+Print both objects and observe behavior
+*/
+
+let info = {
+    name: "Dalim",
+    age: 55,
+    isActive: true,
+    skills: ["js", "html"],
+};
+
+info.skills.push("css");
+
+info.isActive = false;
+
+let info2 = info;
+info2.name = "Roni";
+
+console.log(info);
+console.log(info2);
